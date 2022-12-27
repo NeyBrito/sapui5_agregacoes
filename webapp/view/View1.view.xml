@@ -1,0 +1,71 @@
+<mvc:View 
+    controllerName="treinaui5.agregacao.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    >
+
+    <App id="IdAppControl">
+        <pages>
+            <Page id="page" title="{i18n>title}">
+                <!-- <customHeader> Editar titulo da pagina com CSS de forma mais precisa
+                    <Toolbar>
+                        <content>
+                            <Title id="meuTitulo" text="PaginaNey" color="red" />
+                        </content>
+                    </Toolbar>
+                </customHeader> -->
+                <content>
+                    <ComboBox selectedKey="US">
+                        <items>
+                            <core:Item key="BR"  text="Brasil"></core:Item>
+                            <core:Item key="US" text="Estados Unidos"></core:Item>
+                            <core:Item key="CN"  text="Canada"></core:Item>
+                        </items>
+                    </ComboBox>
+                    <Select forceSelection="false">
+                        <items>
+                            <core:Item key="BR"  text="Brasil"></core:Item>
+                            <core:Item key="US" text="Estados Unidos"></core:Item>
+                            <core:Item key="CN"  text="Canada"></core:Item>
+                        </items>
+                    </Select>
+                </content>
+                <footer>
+                    <!-- <Toolbar active="true">
+                        Content é uma agregação default, dessa forma pode ser omitida a declaração
+                        <ToolbarSpacer />
+                            <Button
+                                text="Aprovar"
+                                type="Accept" />
+                            <Button
+                                text="Reject"
+                                type="Reject" />
+                            <Button
+                                text="Salvar"
+                                type="Emphasized" />
+                    </Toolbar> -->
+
+                    <Bar>
+                        <contentLeft>
+                            <Button
+                                text="Aprovar"
+                                type="Accept" />
+                        </contentLeft>
+                        <contentMiddle>
+                            <Button
+                                text="Reject"
+                                type="Reject" />
+                        </contentMiddle>
+                        <contentRight>
+                            <Button
+                                text="Salvar"
+                                type="Emphasized" />
+                        </contentRight>
+                    </Bar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
+
+</mvc:View>
